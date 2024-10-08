@@ -1,0 +1,16 @@
+ion-input {
+    --background: #d12b2b;
+    --padding-start: 40px;
+    border-radius: 9px;
+    height: 61px;
+  }
+
+  .textoverlay{
+    position: absolute;
+      top: 69%;
+      left: 54%;
+      transform: translate(-50%, -50%);
+      font-size: medium;
+      font-weight: 500;
+      color: aliceblue;
+  }

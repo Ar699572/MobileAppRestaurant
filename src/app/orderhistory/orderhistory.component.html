@@ -1,0 +1,49 @@
+<ion-header class="ion-no-border" style="background-color: #ffffff;border: 1px solid #f1eeee;">
+  <ion-toolbar mode="md" color='danger'>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" class="ion-text-start">
+          <ion-row>
+            <ion-col  size="1">
+              <ion-icon class="iconsize1" name="arrow-back-outline"></ion-icon>
+            </ion-col>
+            <ion-col  size="7"  class="ion-no-padding">
+             <ion-title style="margin-top: 7px"> Orders History</ion-title>
+            </ion-col>
+            <ion-col  size="4"  style="margin-top: 7px" class="ion-no-padding">
+              <ion-icon class="iconsize" name="notifications" ></ion-icon>
+              <ion-badge id="notifications-badge-msg" color="danger">2</ion-badge>
+              <ion-icon class="iconsize" name="cart"></ion-icon>
+            <ion-badge id="notifications-badge" color="danger">5</ion-badge>
+            <img src="../../assets/Images/abdul kareem.jpg">
+             </ion-col>
+          </ion-row>
+        </ion-col>
+     
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  
+  <div *ngFor="let payment of lstorders">
+    <p id="date">{{payment.date}}</p>
+    <div class="upperBox" *ngFor="let item of lstorders">
+      <div class="img">
+        <img src="../../../assets/food/{{item.image}}" />
+      </div>
+    
+   
+      <div class="title">{{item.title}}</div>
+      <div class="price">{{item.amount}}</div>
+      <div class="transId">Transaction ID: #{{item.transId}}</div>
+      <div class="time">{{item.time}}</div>
+      <div class="bank">{{item.bank}} </div>
+      <div class="status " style="font-size: 12px;" [ngStyle]="{'color':(item.status === 'SUCCESS') ? 'green' : (item.status === 'FAILED') ? 'red' : 'orange' }">{{item.status}}</div>
+    </div>
+  </div>
+   
+  </ion-content>
+

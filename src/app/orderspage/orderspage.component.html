@@ -1,0 +1,93 @@
+<ion-header class="ion-no-border" style="background-color: #ffffff;border: 1px solid #f1eeee;">
+  <ion-toolbar mode="md" color='danger'>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" class="ion-text-start">
+          <ion-row>
+            <ion-col  size="1">
+              <ion-icon class="iconsize1" name="arrow-back-outline"></ion-icon>
+            </ion-col>
+            <ion-col  size="7"  class="ion-no-padding">
+             <ion-title style="margin-top: 7px">Yours Orders</ion-title>
+            </ion-col>
+            <ion-col  size="4"  style="margin-top: 7px" class="ion-no-padding">
+              <ion-icon class="iconsize" name="notifications" ></ion-icon>
+              <ion-badge id="notifications-badge-msg" color="danger">2</ion-badge>
+              <ion-icon class="iconsize" name="cart"></ion-icon>
+            <ion-badge id="notifications-badge" color="danger">5</ion-badge>
+            <img src="../../assets/Images/abdul kareem.jpg">
+             </ion-col>
+          </ion-row>
+        </ion-col>
+     
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+    <div class="upperBox" *ngFor="let order of orders; let i = index">
+      <div class="image">
+        <img src="../../../assets/food/{{order.image}}" />
+      </div>
+      <div class="title">
+        <h3>{{order.title}}</h3>
+      </div>
+      <div class="menu">
+        <h3>
+          <ion-icon name="trash-outline" ></ion-icon>
+        </h3>
+      </div>
+      <div class="orderId">
+        <p>Est. Time : {{order.time}}</p>
+      </div>
+      <div class="amount">
+        <h3>${{order.amount}}</h3>
+      </div>
+      <div class="time">
+      </div>
+      <div class="edit">
+        <div class="wrapper">
+          <span class="minus" >-</span>
+          <span class="num">{{order.qty}}</span>
+          <span class="plus" >+</span>
+        </div>
+      </div>
+    </div>
+    <p id="moreItmes" >+ Add more items</p>
+    <!-- {{total_amt + (total_amt/10) -1}} -->
+    <div class="order_summary">
+      <h4>Order Summory</h4>
+      <p>Sub Total <span> 
+        <!-- {{total_amt | number : '1.2-2'}} -->
+        220.0
+      </span></p>
+      <p>GST <span> 
+        <!-- {{total_amt / 10 | number : '1.2-2'}} -->
+        12.0
+      </span></p>
+      <p>Coupan Discount <span style="color:red;">- $1.00</span></p>
+      <p>Delivery <span> Free</span></p>
+      <div id="coupanDiv">
+        <p id="coupan">You have saved $10 on the order <span >Edit Coupan</span></p>
+      </div>
+    </div>
+  </ion-content>
+  <ion-footer >
+    <ion-toolbar color="dark">
+      <ion-row >
+        <ion-col size="7">
+          <ion-text color="light">
+            <!-- {{total_amt + (total_amt/10) -1 | number : '1.2-2'}} -->
+            <h4>Total : $2.00</h4>
+          </ion-text>
+        </ion-col>
+    
+        <ion-col size="5">
+          <p class="ion-text-right ion-padding-end">Continue <ion-icon name="arrow-forward-outline"></ion-icon></p>
+        </ion-col>
+      </ion-row>
+    </ion-toolbar>
+  </ion-footer>

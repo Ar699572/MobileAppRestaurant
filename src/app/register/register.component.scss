@@ -1,0 +1,47 @@
+.iconsize{
+    font-size: 30px;
+}
+
+ion-input {
+    --background: #F5F5F5;
+    --padding-start: 19px;
+    border-radius: 15px;
+    height: 53px
+  }
+
+   .lefttext{
+    padding-left: 21px;
+ }
+
+
+ .success{
+    background-color: #4ae44ad5;
+ }
+ 
+
+ .item-background-color{
+    --ion-item-background:#4ae44ad5;
+}
+
+.btn{
+    background: #1c421c;
+    border-radius: 12px;
+    padding: 14px;
+}
+
+.border{
+    border-style: solid;
+    border-color: rgb(216, 211, 211);
+    padding: 10px
+}
+
+.padding{
+    padding:0px
+}
+ion-toolbar {
+    --background-color: transparent;
+    --ion-color-base: transparent !important;
+  }
+  .pp{
+    padding-left: 9px;
+  }

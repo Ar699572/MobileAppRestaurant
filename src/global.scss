@@ -1,0 +1,107 @@
+
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+.ion-padding{
+    padding:13px
+}
+
+.textcolor{
+    color:#228103;
+    font-weight: bold;
+}
+.danger{
+color: red;
+}
+.ion-padding-topp{
+    padding-top: 41px
+}
+.pt-1{
+padding-top: 12px;
+}
+
+.pl-1{
+    padding-left: 4rem;
+}
+.iconsize1{
+    font-size: 26px;
+  }
+.Imageoption{
+    height: 42%;
+     width: 79%; 
+     object-fit: contain;
+      margin-top: 0px;
+}
+
+
+.mt-1{
+margin-top: 0.6rem;
+}
+.stylefo{
+    font-stretch: extra-expanded;
+    font-size: larger;
+    font-family: emoji;
+}
+.mb-1{
+    margin-bottom: 1rem;
+}
+.brightness{
+    height: 18vh;
+    width: 100%;
+     object-fit: cover;
+     filter: brightness(0.5)
+}
+.fontsize1{
+    font-size: clamp(11px, 1vw, 25px);
+    font-weight: bolder;
+    font-stretch: extra-expanded;
+}
+//  new css
+.mt-2{
+    margin-top: 15px;
+    }
+    .mb-1{
+        margin-bottom: -6px
+    }
+    
+  
+    .fontsize{
+        font-size: clamp(14px, 1vw, 1rem); 
+        font-weight: 500;
+        font-stretch: extra-expanded;
+    }
+    
+    .font {
+        font-size: clamp(11px, 1vw, 25px);
+        color: #878f97;
+        font-stretch: extra-expanded;
+        padding-inline-start: 9px;
+    }
+    
+    .fontsize1{
+        font-size: clamp(11px, 1vw, 25px);
+        font-weight: bolder;
+        font-stretch: extra-expanded;
+    }
+
+@import "./theme/fonts.scss";
+
+*{
+    font-family: gilroy;
+}
+ion-grid{
+    padding: 0px
+}

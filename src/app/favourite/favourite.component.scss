@@ -1,0 +1,17 @@
+
+.container{
+    width: 100%;
+}
+
+.img{
+   
+    height: 22vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.fontoo {
+    font-size: clamp(9px, 1vw, 25px);
+    font-weight: bolder;
+    font-stretch: extra-expanded;
+}

@@ -1,0 +1,114 @@
+.iconsize{
+    font-size: 23px;
+    font-weight: 600;
+}
+
+#date{
+    padding-inline-start: 14px;
+}
+ion-header {
+    font-family: 'Poppins', sans-serif;
+    ion-icon {
+        font-size: 30px;
+        position: relative;
+        margin-right: 10px;
+    }
+    #notifications-badge {
+        background-color: rgb(67, 7, 233);
+        position: absolute;
+        top: -10px;
+        right: 47px;
+        color: #fff;
+        z-index: 111;
+    }
+    #notifications-badge-msg {
+        background-color: rgb(67, 7, 233);
+        position: absolute;
+        top: -8px;
+        right: 90px;
+        color: #fff;
+        z-index: 111;
+    }
+    img {
+        width: 31px;
+        height: 31px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+}
+
+
+.upperBox {
+    width:100%;
+    background-color: #fff;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 34% 33% 9%;
+    gap: 0px 0px;
+    grid-template-areas: 
+    "img title price" 
+    "img transId time" 
+    "img bank status" ;
+  
+    .img {
+        grid-area: img;
+        justify-self: center;
+        align-self: center;
+        img {
+            padding: 10px;
+            border-radius: 20px;
+            height: auto;
+            width: 100%;
+        }
+    }
+    .title {
+        grid-area: title;
+        padding-top: 10px;
+       
+        
+    }
+    .price{
+        grid-area: price;
+        justify-self: end;
+        color: #ccc;
+        align-self: start;
+        margin-right: 20px;
+        padding-top: 10px;
+    }
+    .transId{
+        grid-area: transId;
+       
+        color: #ccc;
+        align-self: start;
+        // margin-top: -10px;
+
+    }
+    
+    .time{
+        grid-area: time;
+        justify-self: end;
+        color: #ccc;
+        align-self: start;
+        margin-right: 20px;
+    }
+    .bank{
+        grid-area: bank;
+        font-size: 14px;
+        color: gray;
+        margin-top: 15px;
+    
+    }
+    .status{
+        grid-area: status;
+        justify-self: end;
+        align-self: start;
+        margin-right: 20px;
+        font-weight: bold;
+
+
+    }
+    
+}

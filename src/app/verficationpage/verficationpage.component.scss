@@ -1,0 +1,100 @@
+// ion-toolbar {
+//     --background-color: transparent;
+//     --ion-color-base: transparent !important;
+//   }
+
+//   .iconsize{
+//     font-size: 30px;
+// }
+
+// ion-input {
+//     --background: #F5F5F5;
+//     --padding-start: 15px;
+//     border-radius: 15px;
+//     height: 47px
+//   }
+
+//    .lefttext{
+//     padding-left: 21px;
+//  }
+
+
+//  .success{
+//     background-color: #4ae44ad5;
+//  }
+ 
+
+//  .item-background-color{
+//     --ion-item-background:#1c421c;
+// }
+
+// .btn{
+//     background: #004400;
+//     border-radius: 12px;
+//     padding: 14px;
+// }
+
+// .border{
+//     border-style: solid;
+//     border-color: rgb(216, 211, 211);
+//     padding: 10px
+// }
+
+// .padding{
+//     padding:0px
+// }
+
+
+// // otp presentation
+
+
+.container{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    align-items: space-around;
+    justify-content: center;
+  }
+  
+  .userInput{
+    display: flex;
+    justify-content: center;
+  }
+  
+  input{
+    margin: 10px;
+    height: 48px;
+    width: 51px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-family: arimo;
+    font-size: 1.2rem;
+    background: #eef2f3;
+  
+  }
+  
+//   h1{
+//     text-align: center;
+//     font-family: arimo;
+//     color: honeydew;
+//   }
+  
+  
+//   button{
+//     width: 150px;
+//     height: 40px;
+//     margin: 25px auto 0px auto;
+//     font-family: arimo;
+//     font-size: 1.1rem;
+//     border: none;
+//     border-radius: 5px;
+//     letter-spacing: 2px;
+//     cursor: pointer;
+//     background: #616161;  /* fallback for old browsers */
+//   background: -webkit-linear-gradient(to right, #9bc5c3, #616161);  /* Chrome 10-25, Safari 5.1-6 */
+//   background: linear-gradient(to right, #9bc5c3, #616161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+//   }
+  
+

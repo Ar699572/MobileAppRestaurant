@@ -1,0 +1,62 @@
+<!-- <ion-header  class="ion-no-border " style="top: 6px;  left: 13px;">
+  <ion-toolbar color="translucent">
+    <ion-buttons  > <ion-icon class="iconsize" name="arrow-back-outline"> </ion-icon>   </ion-buttons>
+  </ion-toolbar>
+ 
+  </ion-header>
+
+  <ion-content  class="ion-no-padding">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" class="ion-no-padding ion-text-start "> <ion-text style="font-size: 1em;font-family: Arial, Helvetica, sans-serif;padding-left: 7rem;"><b>Email Verification</b></ion-text> </ion-col>
+        <ion-col size="12" class="ion-padding-top ion-text-center"><ion-text style="font-size: 1em;font-family: Arial, Helvetica, sans-serif;">We have Sent code to Your email:</ion-text></ion-col>  
+        <ion-col size="12" class="ion-text-center"><ion-text style="font-size: 1em;font-family: Arial, Helvetica, sans-serif;">example@gmail.com</ion-text></ion-col> 
+        <ion-col size="12" class="ion-padding-top "> 
+          <div class="container">
+            <h1>ENTER OTP</h1>
+            <div class="userInput">
+              <input type="text" id='ist' maxlength="1" onkeyup="clickEvent(this,'sec')">
+              <input type="text" id="sec" maxlength="1" onkeyup="clickEvent(this,'third')">
+              <input type="text" id="third" maxlength="1" onkeyup="clickEvent(this,'fourth')">
+              <input type="text" id="fourth" maxlength="1" onkeyup="clickEvent(this,'fifth')">
+            </div>
+          <div style="padding-top: 15px;font-size: 14px;   text-align: center;">Didn't receive code?<ion-text class="textcolor"> Resend</ion-text></div>
+          </div>
+          
+          
+       
+      </ion-col>  
+  
+      <ion-col size="12" class="ion-padding-top"> <div class="item-background-color ion-text-center  btn"> <ion-text color="light">Verify and Create Account</ion-text></div></ion-col> 
+      </ion-row>
+  
+    </ion-grid>
+  </ion-content> -->
+ <ion-header  class="ion-no-border " style="top: 6px;  left: 13px;">
+  <ion-toolbar color="translucent">
+    <ion-buttons  > <ion-icon class="iconsize" name="arrow-back-outline"> </ion-icon>   </ion-buttons>
+  </ion-toolbar>
+ 
+  </ion-header>
+  <ion-content class="ion-padding">
+    <h1 style="text-align: center;">Email Verification</h1>
+    <p style="text-align: center;">We have Sent code to Your email!..</p>
+  
+    <form>
+   
+      <div class="container">
+       <p style="text-align: center;">Enter OTP</p>
+        <div class="userInput">
+          <input type="text" id='ist' maxlength="1" onkeyup="clickEvent(this,'sec')">
+          <input type="text" id="sec" maxlength="1" onkeyup="clickEvent(this,'third')">
+          <input type="text" id="third" maxlength="1" onkeyup="clickEvent(this,'fourth')">
+          <input type="text" id="fourth" maxlength="1" onkeyup="clickEvent(this,'fifth')">
+        </div>
+      <div style="padding-top: 15px;font-size: 14px;text-align: center;">Didn't receive code?<ion-text class="textcolor"> Resend</ion-text></div>
+      </div>
+      <app-button label='Verify and Create Account'></app-button>
+      
+    </form>
+  
+   
+  </ion-content>

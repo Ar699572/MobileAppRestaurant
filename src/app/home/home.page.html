@@ -1,0 +1,164 @@
+<!-- <ion-header   class="ion-no-border" style="background-color: #ffffff;border: 1px solid #f1eeee;" >
+    <ion-toolbar  mode ="md" color="translucent" style="margin-bottom: -11px" >
+      <ion-grid>
+      <ion-row>
+          <ion-col size="2">
+            <ion-text class="ion-text-start"><b>Now</b></ion-text> 
+          </ion-col>
+          <ion-col size="1">
+            <ion-icon class="iconsize" name="arrow-forward-outline"></ion-icon> 
+          </ion-col>
+         
+          <ion-col size="5" class="ion-text-start">
+          
+            <ion-text><b>England</b></ion-text> 
+          </ion-col>
+          <ion-col size="4">
+          <span>
+            <ion-text style="font-size:18px;color:#666666;font-weight: bold;" ><b>offers</b></ion-text>
+            <ion-badge  mode ="md" color="danger" style="float:right">New</ion-badge></span>
+          </ion-col>
+  
+      </ion-row>
+    </ion-grid>
+    
+    </ion-toolbar>
+    </ion-header> -->
+    <ion-header class="ion-no-border" style="background-color: #ffffff;border: 1px solid #f1eeee;">
+      <ion-toolbar mode="md" >
+       <div class="top">
+        <div class="now">
+          <ion-text ><b>Now</b></ion-text> 
+        </div>
+        <div class="arrow">
+          <ion-icon class="iconsize" name="arrow-forward-outline"></ion-icon> 
+        </div>
+        <div class="offer">
+          <ion-badge  mode ="md" color="danger" style="float:right">New</ion-badge>
+        </div>
+        <div class="textt">
+          
+          <ion-label>HYDERABAD</ion-label>
+        </div>
+       </div>
+      </ion-toolbar>
+    </ion-header>
+
+    
+    <ion-content style='position:absolute; top:0; right:0; bottom:0; left:0; overflow-y:scroll; overflow-x: hidden'> 
+        <ion-grid>
+            <ion-row>
+                <ion-col size="12">
+                    <ion-slides pager="true" [options]="slideOpts" >
+                        <ion-slide>
+                        <ion-card class="slidercard">
+                           
+                                <img src="../../assets/Images/food2.jpeg" >
+                               <h2 class="textoverlay">Sandwich</h2>
+                            
+                        </ion-card>
+                        </ion-slide>
+                        <ion-slide>
+                            <ion-card class="slidercard">
+                               
+                                    <img src="../../assets/Images/food3.jpg" >
+                                    <h2 class="textoverlay">Biryani</h2>
+                               
+                            </ion-card>
+                        </ion-slide>
+                        <ion-slide>
+                            <ion-card class="slidercard">
+                        
+                                    <img src="../../assets/Images/food4.jpg" >
+                                    <h2 class="textoverlay">Chicken 65</h2>
+                               
+                            </ion-card>
+                        </ion-slide>
+                      </ion-slides>
+                </ion-col>
+            </ion-row>
+  
+            <ion-row>
+             
+  
+        
+              <ion-col size="12">
+             
+                  <ion-row   class="ion-text-center">
+                    <ion-col size="3"><img src="../../assets/Images/discount.png" class="Imageoption "><div class="fontsize">Offers</div></ion-col>
+                    <ion-col size="3"><img src="../../assets/Images/vegetarian.png" class="Imageoption " ><div class="fontsize">Veg only</div></ion-col>
+                    <ion-col size="3"><img src="../../assets/Images/pocket.png"  class="Imageoption "><div class="fontsize">Pocket</div></ion-col>
+                    <ion-col size="3"><img src="../../assets/Images/toprated.png"  class="Imageoption "><div class="fontsize">Top & Rated</div></ion-col>
+                  </ion-row>
+                  
+     
+                 
+              </ion-col>
+             
+              <ion-col size="5" class="ion-text-start " ><ion-text class="size"><b>All Restaurants</b></ion-text> </ion-col>
+              
+              
+              <ion-col size="7" > 
+                <ion-row >
+                  <ion-col size="7" class="ion-text-end" >
+                    <span ><img src="../../assets/Images/plugins.png" style="transform: rotate(89deg);width: 29px;" ></span>
+                     </ion-col>
+                  <ion-col size="5" class="ion-text-end"><ion-text class="size" ><b>Sort/Filter</b></ion-text></ion-col> 
+                </ion-row>
+              </ion-col>
+              <ion-col size="4"  > <img src="../../assets/Images/food2.jpeg" style="height: 15vh; object-fit: cover;" ></ion-col>
+             
+              <ion-col size="8" class="ion-text-start" >
+                <ion-row>
+                  <ion-col size="12">
+                    <ion-text style="font-size: 22px; font-family: fangsong"><b>Green Bawarchi</b></ion-text> 
+                   
+                  </ion-col>
+                  <ion-col size="12" class="ion-no-padding">
+                    <ion-text class="fontsize1">bowl of chicken soup with noodles</ion-text> 
+                  </ion-col>
+                  <ion-col size="2" style="padding: 10px;" ><img src="../../assets/Images/discount.png"  style="height: 43px;width: 200px;object-fit: contain;" >    </ion-col>
+                  <ion-col size="10" style="padding-top: 21px"><div class="fontsize1 danger">40% Off| Use Coupons FOODSWE</div>  </ion-col>
+               <div style="width: 100%;border-top:1px solid #040000;margin:8px 0;"></div>
+                <ion-col size="12" style="font: menu;"> <ion-icon name="star-sharp"></ion-icon> 4.6 - 43 mins - ₹ 350 for two </ion-col>
+                </ion-row>
+              </ion-col>
+
+              <ion-col size="4"  > <img src="../../assets/Images/food2.jpeg" style="height: 15vh; object-fit: cover;" ></ion-col>
+             
+              <ion-col size="8" class="ion-text-start" >
+                <ion-row>
+                  <ion-col size="12">
+                    <ion-text style="font-size: 22px; font-family: fangsong"><b>Brother Bawarchi</b></ion-text> 
+                   
+                  </ion-col>
+                  <ion-col size="12" class="ion-no-padding">
+                    <ion-text class="fontsize1">bowl of chicken soup with noodles</ion-text> 
+                  </ion-col>
+                  <ion-col size="2" style="padding: 10px;" ><img src="../../assets/Images/discount.png"  style="height: 43px;width: 200px;object-fit: contain;" >    </ion-col>
+                  <ion-col size="10" style="padding-top: 21px"><div class="fontsize1 danger">40% Off| Use Coupons FOODSWE</div>  </ion-col>
+               <div style="width: 100%;border-top:1px solid #040000;margin:8px 0;"></div>
+                <ion-col size="12" style="font: menu;"> <ion-icon name="star-sharp"></ion-icon> 4.6 - 43 mins - ₹ 350 for two </ion-col>
+                </ion-row>
+              </ion-col>
+
+              <ion-col size="4"  > <img src="../../assets/Images/food4.jpg" style="height: 15vh; object-fit: cover;" ></ion-col>
+             
+              <ion-col size="8" class="ion-text-start" >
+                <ion-row>
+                  <ion-col size="12">
+                    <ion-text style="font-size: 22px; font-family: fangsong"><b>AlSafa Restaurent</b></ion-text> 
+                   
+                  </ion-col>
+                  <ion-col size="12" class="ion-no-padding">
+                    <ion-text class="fontsize1">bowl of chicken soup with noodles</ion-text> 
+                  </ion-col>
+                  <ion-col size="2" style="padding: 10px;" ><img src="../../assets/Images/discount.png"  style="height: 43px;width: 200px;object-fit: contain;" >    </ion-col>
+                  <ion-col size="10" style="padding-top: 21px"><div class="fontsize1 danger">40% Off| Use Coupons FOODSWE</div>  </ion-col>
+               <div style="width: 100%;border-top:1px solid #040000;margin:8px 0;"></div>
+                <ion-col size="12" style="font: menu;"> <ion-icon name="star-sharp"></ion-icon> 4.6 - 43 mins - ₹ 350 for two </ion-col>
+                </ion-row>
+              </ion-col>
+          </ion-row>
+        </ion-grid>
+    </ion-content>
